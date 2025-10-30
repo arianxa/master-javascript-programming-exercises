@@ -1,4 +1,4 @@
 function getLengthOfTwoWords(word1, word2) {
-  // your code here
-  
+let total=word1.length +word2.length;
+  return   total;
 }

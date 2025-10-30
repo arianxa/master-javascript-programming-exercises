@@ -1,6 +1,14 @@
 function flipPairs(input) {
-    // your code here
-    
+    let result = '';
+    for (let i = 0; i < input.length; i += 2) {
+        // Verifica si hay un par de caracteres
+        if (i + 1 < input.length) {
+            result += input[i + 1] + input[i]; // Añade el segundo carácter primero
+        } else {
+            result += input[i]; // Si es impar, solo añade el último carácter
+        }
+    }
+    return result;
 }
 
 let input = "Can you see what this is about?";

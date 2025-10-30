@@ -1,6 +1,11 @@
 function removeNumberValues(obj) {
-    // your code here
-    
+for(let key in obj){
+    let value =obj[key]
+    if(Number.isInteger(value)){
+delete obj[key]
+    }
+}    
+return obj
 }
 
 let obj = {

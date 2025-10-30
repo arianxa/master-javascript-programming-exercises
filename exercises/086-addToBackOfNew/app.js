@@ -1,6 +1,7 @@
 function addToBackOfNew(arr, element) {
-    // your code here
-    
+let clone= arr.slice()
+clone.push(element)
+return clone    
 }
 
 let input = [1, 2];

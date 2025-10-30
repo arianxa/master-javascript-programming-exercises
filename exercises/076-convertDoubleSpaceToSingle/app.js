@@ -1,6 +1,8 @@
 function convertDoubleSpaceToSingle(str) {
-    // your code here
-    
+
+let partes= str.split("  ");
+let total=partes.join(" ");
+return total    
 }
 
 let output = convertDoubleSpaceToSingle("string  with  double  spaces");

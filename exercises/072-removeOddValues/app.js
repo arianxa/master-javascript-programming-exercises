@@ -1,6 +1,13 @@
 function removeOddValues(obj) {
-    // your code here
 
+  for (let key in obj){
+let value=obj[key];
+    if(value % 2 !==0){
+      delete obj[key]
+    }
+}
+
+return obj
 }
 
 let obj = {

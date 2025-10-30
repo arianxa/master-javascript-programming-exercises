@@ -8,8 +8,8 @@ let obj = {
 }
 
 function countNumberOfKeys(obj) {
-    // your code here
-   
+let cantidadPropiedades = Object.values(obj).length;   
+return cantidadPropiedades
 }
 
 let output = countNumberOfKeys(obj);

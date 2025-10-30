@@ -1,10 +1,11 @@
 function average(arr) {
-  // your code here
-  
+  const promedio = sum(arr) / arr.length;
+return promedio
 }
 
 function sum(arr) {
-  // your code here
+const suma = arr.reduce((acumulador, numeroActual) => acumulador + numeroActual, 0);
+return suma
   
 }
 

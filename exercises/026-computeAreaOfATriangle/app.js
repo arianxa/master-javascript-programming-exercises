@@ -1,1 +1,3 @@
-// Write your function here
+function computeAreaOfATriangle(b,a){
+    return (b * a) / 2
+}

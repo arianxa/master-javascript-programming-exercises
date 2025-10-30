@@ -1,5 +1,15 @@
 function getLongestElement(arr) {
-    // your code here
+    if(arr.length===0){
+        return ""
+    }
+let corto=""
+for(let palabra of arr){
+    if(palabra.length>corto.length){
+        corto=palabra
+    }
+
+}   
+return corto
     
 }
 

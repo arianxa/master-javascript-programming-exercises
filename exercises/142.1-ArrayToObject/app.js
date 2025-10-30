@@ -1,5 +1,9 @@
 function transformFirstAndLast(array) {
-  // your code here
+primer = array[0]
+ultimo = array[array.length - 1]
+obj = {}
+obj[primer] = ultimo
+return obj
   
 }
 

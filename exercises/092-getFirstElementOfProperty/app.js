@@ -1,1 +1,14 @@
-// Write your function here
+function getFirstElementOfProperty (obj, key){
+
+
+ if(obj[key]== undefined){
+    return undefined
+ }else if(!Array.isArray(obj[key])){
+    return undefined
+ }else if(obj[key].length==0){
+    return undefined
+ }
+ else{
+    return obj[key][0]
+ }
+}

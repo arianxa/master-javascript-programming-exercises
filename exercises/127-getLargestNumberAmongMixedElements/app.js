@@ -1,6 +1,12 @@
 function getLargestNumberAmongMixedElements(arr) {
-    // your code here
-    
+ if(arr.length===0){
+        return 0
+    }
+let numeros =arr.filter(item=>typeof item ==="number");
+  if(numeros.length===0){
+        return 0
+    }
+return Math.max(...numeros)
 }
 
 let output = getLargestNumberAmongMixedElements([3, 'word', 5, 'up', 3, 1]);

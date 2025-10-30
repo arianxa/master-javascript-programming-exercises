@@ -1,3 +1,22 @@
+function renderAverageCostPerDesigner(inventory) {
+  const result = [];
+
+  for (let i = 0; i < inventory.length; i++) {
+    const designer = inventory[i];
+    const shoes = designer.shoes || [];
+
+    let sum = 0;
+    for (let j = 0; j < shoes.length; j++) {
+      sum += shoes[j].price;
+    }
+
+    const average = shoes.length ? sum / shoes.length : 0;
+    result.push({ name: designer.name, averagePrice: average });
+  }
+
+  return result;
+}
+
 let currentInventory = [
   {
     name: 'Brunello Cucinelli',
@@ -16,10 +35,5 @@ let currentInventory = [
     ],
   },
 ];
-
-function renderAverageCostPerDesigner(inventory) {
-    // your code here
-  
-}
 
 console.log(renderAverageCostPerDesigner(currentInventory));

@@ -1,6 +1,8 @@
 function computeSumOfAllElements(arr) {
-  // your code here
-  
+let numeros=arr.reduce(function(acumulador,valorActual){
+  return acumulador + valorActual
+},0)
+return numeros
 }
 
 let output = computeSumOfAllElements([1, 2, 3])

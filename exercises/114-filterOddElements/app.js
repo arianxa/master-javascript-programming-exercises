@@ -1,5 +1,8 @@
 function filterOddElements(arr) {
-  // your code here
+  let extra=arr.filter(function(item){
+  return item %2!==0
+})  
+return extra
   
 }
 
